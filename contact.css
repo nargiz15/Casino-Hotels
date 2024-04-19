@@ -1,0 +1,168 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+/* main side*/
+
+.mainTopSide{
+   padding: 120px;
+}
+.mainTop{
+   gap: 40px;
+}
+.Main{
+    background-color: white;
+    padding: 70px 70px;
+    border: 3px solid rgb(231, 227, 227);
+    margin-top: 40px;
+}
+.Main p{
+   color: gray;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+form input{
+   width: 300px;
+   height: 40px;
+   padding: 8px;
+    border-radius: 10px;
+    background-color: gainsboro;
+    outline: none;
+    border: none;
+    font-size: 14px;
+}
+
+form textarea{
+    width: 350px;
+    height: 95px;
+    text-align: justify;
+    padding: 10px 10px;
+    border: none;
+    background-color: gainsboro;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+}
+.ContainForm{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+form button{
+    padding: 15px 100px;
+    text-align: right;
+    border: none;
+    background-color: rgb(9, 174, 9);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Mobiles */
+@media only screen and (max-width: 600px) {
+
+    /* header side */
+
+    .rightSideNav{
+     display: flex;
+    }
+    .rightSideNav a{
+     display: none;
+    }
+    #menuIcon{
+     display: flex;
+    }
+    .leftSideNav{
+     display: none;
+    }
+ 
+    /*main side*/
+ 
+   main{
+     width: 100%;
+     overflow: hidden;
+   }
+   .mainTopSide{
+    width: auto;
+   }
+   .mainTopSide button{
+    width: 200px;
+    font-size: 12px;
+   }
+    .mainTopSide h1{
+        font-size: 24px;
+        text-align: center;
+        line-height: 2rem;
+       
+       
+    }
+   main p{
+    text-align: left;
+   }
+   .container{
+     width: 95%;
+   }
+    
+   .ContainForm{
+    flex-direction: column;
+   }
+    form textarea{
+        padding: 15px;
+        width: 220px;
+        margin-top: 10px;
+    }
+    form input{
+        padding: 20px;
+        width: 220px;
+    }
+    form button{
+        padding: 10px 40px;
+        width: 180px;
+        text-align: center;
+        align-items: center;
+    }
+    /* footer side */
+    
+   .footerText li a{
+     font-size: 14px;
+     margin-right: 5px;
+   }
+  
+   .footerText p{
+     width: 80%;
+     font-size: 14px;
+   }
+   
+ }
+
+ /* Tablets */
+@media only screen and (min-width:601px) and (max-width:1024px){
+    .container{
+        max-width: 1000px;
+        width: 90%;
+    }
+    .mainTopSide h1{
+        font-size: 48px;
+    }
+    .ContainForm {
+        gap: 10px;
+    }
+    .ContainForm input{
+        width: 18rem;
+    }
+     .ContainForm textarea{
+        width: 18rem;
+     }
+
+}
+  

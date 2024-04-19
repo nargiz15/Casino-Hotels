@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F3EEE9;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* header section */
+
+header {
+    background-color: #5130cb;
+    width: auto;
+    padding: 30px;
+}
+
+.Container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1250px;
+
+}
+
+nav {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #5230cb94;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+    margin: 20px;
+    list-style: none;
+}
+
+.sidebar a {
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar i {
+    margin: 20px;
+}
+
+.menuIcon {
+    display: none;
+}
+
+.rightSideNav {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.rightSideNav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#menuIcon {
+    display: none;
+}
+
+.leftSideNav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+
+}
+
+.leftSideNav li>a {
+    color: white;
+    text-decoration: none;
+    margin-right: 40px;
+    font-weight: 600;
+}
+
+
+/*main section*/
+.mainTopSide {
+    background-image: url(./../images/BGImg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.mainTopSide button {
+    background-color: rgba(0, 0, 0, 0.677);
+    color: gray;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 8px;
+}
+
+.mainTopSide h1 {
+    font-size: 48px;
+    color: white;
+}
+
+.mainTopSide p {
+    width: 60%;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.container {
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#hotelRoomsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    position: relative;
+}
+
+.hotelRoom {
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 370px;
+    gap: 15px;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    border-bottom: 15px solid rgba(183, 68, 183, 0.797);
+    position: relative;
+
+}
+
+.hotelRoom img {
+    width: 100%;
+
+}
+
+.rates {
+    display: flex;
+    color: #fedb07;
+    font-size: 10px;
+    gap: 2px;
+    background-color: #6F6F6F;
+    padding: 8px 16px;
+    position: absolute;
+    top: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+.mainBottomSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 50px;
+
+}
+
+.mainBottomSide p {
+    width: 50%;
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+/* footer */
+.hotelRoom h2 {
+    text-align: center;
+    font-size: 18px;
+}
+
+.hotelRoom p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.hotelRoom button {
+    padding: 10px 60px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #40bd2e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+Footer {
+    background-color: #2b273b;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.footerText {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footerText ul {
+
+    gap: 40px;
+    list-style: none;
+}
+
+.footerText li a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footerText p {
+    color: gray;
+    text-align: center;
+    width: 60%;
+    font-size: 14px;
+}
+
+/* Mobiles */
+@media only screen and (max-width: 600px) {
+
+    /* header side*/
+
+    .rightSideNav {
+        display: flex;
+    }
+
+    .rightSideNav a {
+        display: none;
+    }
+
+    #menuIcon {
+        display: flex;
+    }
+
+    .leftSideNav {
+        display: none;
+    }
+
+    /*main side*/
+
+    main {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .mainTopSide {
+        background-size: cover;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .mainTopSide h1 {
+        font-size: 28px;
+        text-align: center;
+        padding: 15px;
+        line-height: 3.8rem;
+        margin-bottom: -20px;
+    }
+
+    .mainTopSide p {
+        width: 100%;
+        padding: 10px 10px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .container {
+        width: 50%;
+    }
+
+    .mainBottomSide h2 {
+        width: 70%;
+        text-align: center;
+    }
+
+    .hotelRoom {
+
+        bottom: 30px;
+        gap: 8px;
+    }
+
+    .hotelRoom h2 {
+        font-size: 16px;
+    }
+
+    .hotelRoom p {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .hotelRoom button {
+        padding: 10px;
+
+
+    }
+
+    /* Footer Side*/
+
+    .footerText li a {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    .footerText p {
+        width: 80%;
+        font-size: 14px;
+    }
+
+}
+
+/* Tablets */
+@media only screen and (min-width:601px) and (max-width:1024px) {
+
+    /*main side*/
+
+    .mainTopSide {
+        padding-top: 40px;
+    }
+
+    .mainTopSide h1 {
+        font-size: 24px;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .hotelRoomsContainer {
+        flex-direction: column;
+    }
+
+    .hotelRoom {
+        width: 500px;
+        height: 480px;
+    }
+
+    .hotelRoom h2 {
+        font-size: 20px;
+    }
+
+    .hotelRoom p {
+        padding: 15PX;
+    }
+}
